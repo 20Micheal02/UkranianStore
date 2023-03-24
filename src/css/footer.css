@@ -1,0 +1,39 @@
+.footer{
+  background: #141B25;
+  padding: 30px 0px 30px 0px;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__logo {
+}
+.logo {
+}
+.footer__categories {
+}
+.footer__title {
+  font-size: 18px;
+  font-weight: 600;
+  color:#F89B24;
+}
+.footer__ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px 0px 0px 0px;
+}
+.footer__ul li{
+  margin: 10px 0px 10px 0px;
+}
+
+.footer__link {
+  color:#fff;
+  padding: 5px;
+  transition: 0.5s;
+}
+.footer__link:hover {
+  color:#F89B24;
+  transition: 0.5s;
+}
+.footer__info {
+}

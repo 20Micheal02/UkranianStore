@@ -1,0 +1,78 @@
+.header {
+  background: #141B25;
+  padding: 20px 0px 20px 0px;
+  position: relative;
+}
+.header__wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  display: flex;
+  align-items:center;
+  gap: 30px;
+}
+.logo {
+  font-size: 25px;
+  color: #fff;
+}
+.logo span {
+  font-size: 25px;
+  color: #F5227D;
+}
+.header__btn-categories{
+  background: #141B25;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color:#fff;
+  padding: 8px 15px 8px 15px;
+}
+.header__menu {
+  display: flex;
+  align-items:center;
+  
+}
+.header__ul {
+  display: flex;
+  align-items:center;
+  gap: 15px;
+  margin: 0px 40px 0px 0px;
+}
+.header__link {
+  color:#fff;
+  font-size: 16px;
+  padding: 10px;
+  transition: 0.5s;
+}
+.header__link:hover{
+  color:#24709f;
+  transition: 0.5s;
+}
+
+.header__user-btn {
+  display: flex;
+  gap: 20px;
+}
+.auth img {
+  width: 25px;
+}
+.header__catr img{
+  width: 25px;
+}
+
+.cloas-menu{
+  display: none;
+  width: 80%;
+  background: #bababa;
+  position: absolute;
+  top: 75px;
+}
+.open-menu{
+  display: block;
+  width: 80%;
+  padding: 30px 20px 30px 20px;
+  background: #33455e;
+  position: absolute;
+  top: 75px;
+}

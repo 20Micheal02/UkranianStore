@@ -13,13 +13,15 @@ export function Header() {
         </button>
       </div>
       <div class="cloas-menu">
-        <ul class="header__ul">
+        <ul class="header__ulmenu">
           <li><a class="header__link" href="#">Акція</a></li>
           <li><a class="header__link" href="#">Гарантія</a></li>
           <li><a class="header__link" href="#">Доставка</a></li>
           <li><a class="header__link" href="#">Оплата</a></li>
         </ul>
         <ul>
+
+
           <li><a class="footer__link"  href="#">iPhone</a></li>
           <li><a class="footer__link" href="#">MacBook</a></li>
           <li><a class="footer__link" href="#">AirPods</a></li>

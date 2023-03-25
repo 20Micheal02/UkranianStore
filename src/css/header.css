@@ -76,7 +76,29 @@
   position: absolute;
   top: 75px;
 }
+<<<<<<< HEAD
 
 .open-menu:active {
   transition: all 0.3s ease;
+=======
+/*  */
+@media (max-width: 992.98px) {
+  .header__ul {
+    display: none;
+    align-items:center;
+  }
+  .header__logo {
+    display: flex;
+    align-items:center;
+    flex-direction: row-reverse;
+    gap: 15px;
+  }
+  .header__btn-categories{
+    background: #141B25;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color:#fff;
+    padding: 5px 13px 5px 13px;
+  }
+>>>>>>> ad7f766c05798a579dc3a05b1ccba0d216fa74b6
 }

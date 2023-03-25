@@ -1,5 +1,3 @@
-
-
 export function Footer() {
   document.querySelector('.footer-body').innerHTML = `
   <div class="footer">

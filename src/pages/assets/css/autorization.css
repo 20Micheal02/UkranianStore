@@ -1,0 +1,98 @@
+.autorization {
+    padding: 160px 0 220px 0;
+}
+
+.autorization-block {
+    background: #FDFDFD;
+    box-shadow: 0px 7px 64px rgba(80, 77, 92, 0.1);
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.autorization-block__title {
+    color: #121232;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.button-autorization {
+    background:  #F5227D;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);
+    border-radius: 4.8px;
+    width: 100%;
+    padding: 20px 0;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.button-autorization__margin {
+    margin: 20px 0;
+}
+
+.selection-entrance {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3px;
+}
+
+.selection-entrance__text {
+    margin-right: 5px;
+}
+
+.selection-entrance__subtext {
+    color: #F5227D;
+}
+
+.selection-entrance__password {
+    text-align: center;
+}
+
+.autorization-box {
+    position: relative;
+}
+
+.autorization__box-input {
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.87);
+    padding: 10px;
+    background: #fff;
+    outline: none;
+    color: #000;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.autorization__box-text {
+    position: absolute;
+    left: 0;
+    padding: 12px 10px 10px 10px;
+    pointer-events: none;
+    font-size: 14px;
+    color:  #000;
+    transition: .3s;
+}
+
+.autorization-box input:valid ~ span,
+.autorization-box input:focus ~ span
+ {
+    color: #000;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 12px;
+    padding: 0 10px;
+    background: #fff;
+    border-left: 1px solid #F5227D;
+    border-right: 1px solid #F5227D;
+    letter-spacing: 0.2em;
+}
+
+.autorization-box input:valid,
+.autorization-box input:focus {
+    border: 1px solid #F5227D;
+}

@@ -76,3 +76,7 @@
   position: absolute;
   top: 75px;
 }
+
+.open-menu:active {
+  transition: all 0.3s ease;
+}

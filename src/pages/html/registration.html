@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <title>Вхід для клієнта</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../../css/reseter.css" />
+    <link rel="stylesheet" href="../../css/header.css" />
+    <link rel="stylesheet" href="../assets/css/autorization.css" />
+    <link rel="stylesheet" href="../../css/footer.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-body">
+                <!-- header -->
+            </div>
+        </header>
+        <!-- content -->
+        <main>
+            <section class="autorization">
+                <div class="autorization-continer container">
+                    <div class="autorization-block">
+                        <div class="autorization-block__title">
+                            Створіть обліковий запис
+                        </div>
+                        <form action="/login" method="POST">
+                            <div class="autorization-box">
+                                <input type="text" id="fname" name="fname" class="autorization__box-input" required>
+                                <span class="autorization__box-text">Ім'я</span>
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="autorization-box">
+                                <input type="text" id="lname" name="lname" class="autorization__box-input" required>
+                                <span class="autorization__box-text">Прізвище</span>
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="autorization-box">
+                                <input type="tel" id="mobile" name="mobile" class="autorization__box-input" required>
+                                <span class="autorization__box-text">Телефон</span>
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="autorization-box">
+                                <input type="email" id="email" name="email" class="autorization__box-input" required>
+                                <span class="autorization__box-text">Почта</span>
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="autorization-box">
+                                <input type="password" id="password" name="password" class="autorization__box-input"
+                                    required>
+                                <span class="autorization__box-text">Пароль</span>
+                                <div class="error-message"></div>
+                            </div>
+                            <button class="button-autorization button-autorization__margin">увійти</button>
+                        </form>
+                        <div class="selection-entrance">
+                            <p class="selection-entrance__text selection-entrance__text-grey">Відправляючи форму, ви
+                                погоджуєтеся з тим, що</p>
+                        </div>
+                        <div class="selection-entrance__password">
+                            <a href="#" class="selection-entrance__subtext">Умови використання</a>
+                            <a href="#" class="selection-entrance__subtext">Політика конфіденційності</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-body">
+                <!--footer  -->
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="../assets/js/autorization.js"></script>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>

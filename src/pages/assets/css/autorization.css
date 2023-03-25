@@ -1,3 +1,4 @@
+/*-------------------------------autorization----------------------------------------*/
 .autorization {
     padding: 160px 0 220px 0;
 }
@@ -17,11 +18,11 @@
     font-weight: 400;
     line-height: 30px;
     margin-bottom: 20px;
+    text-align: center;
 }
-
+/*-------------------------------button-autorization----------------------------------------*/
 .button-autorization {
     background:  #F5227D;
-    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);
     border-radius: 4.8px;
     width: 100%;
     padding: 20px 0;
@@ -29,12 +30,28 @@
     font-size: 14px;
     color: #fff;
     padding: 15px 0;
+    border: 1px solid #c50156;
+    text-transform: uppercase;
 }
 
 .button-autorization__margin {
     margin: 20px 0;
 }
 
+.button-autorization:hover {
+    border: 1px solid #c50156;
+    background: #fff;
+    color: #c50156;
+    transition: .3s ease-in;
+}
+
+.button-autorization:active {
+    border: 1px solid rgb(102, 98, 98);
+    background: #fff;
+    color: rgb(102, 98, 98);
+}
+
+/*-------------------------------selection-entrance----------------------------------------*/
 .selection-entrance {
     display: flex;
     justify-content: center;
@@ -49,10 +66,18 @@
     color: #F5227D;
 }
 
+.selection-entrance__subtext:hover {
+    color: #c51e66;
+    transition: .3s;
+}
+
 .selection-entrance__password {
     text-align: center;
 }
 
+.selection-entrance__text-grey {
+    color: #848892;
+}
 .autorization-box {
     position: relative;
 }
@@ -66,7 +91,7 @@
     color: #000;
     font-size: 14px;
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .autorization__box-text {
@@ -79,6 +104,7 @@
     transition: .3s;
 }
 
+/*-------------------------------autorization-box input effects----------------------------------------*/
 .autorization-box input:valid ~ span,
 .autorization-box input:focus ~ span
  {
@@ -95,4 +121,35 @@
 .autorization-box input:valid,
 .autorization-box input:focus {
     border: 1px solid #F5227D;
+}
+
+/*-------------------------------error-message----------------------------------------*/
+.error-message {
+    color: red;
+}
+
+.autorization-box:nth-child(1) > .error-message {
+    margin: 0 0 10px 0;
+}
+
+/*-------------------------------media-mobile----------------------------------------*/
+
+@media only screen and (max-width: 480px) {
+    .selection-entrance, .selection-entrance__subtext {
+        font-size: 12px;
+    }
+    
+    .error-message {
+        font-size: 10px;
+    }
+}
+
+/*--------------------------------------forgotPassword--------------------------------*/
+
+.autorization-block__subtitle {
+    color: #848892;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 20px;
 }

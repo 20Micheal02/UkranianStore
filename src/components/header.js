@@ -39,7 +39,7 @@ export function Header() {
           <li><a class="header__link" href="#">Оплата</a></li>
         </ul>
         <div class="header__user-btn">
-          <a href="../pages/html/autorization.html" class="auth"><img src=${user} alt="user"></a>
+          <a href="../pages/html/login.html" class="auth"><img src=${user} alt="user"></a>
           <a href="#" class="header__catr"><img src=${cart} alt="cart"></a>
         </div>
       </div>

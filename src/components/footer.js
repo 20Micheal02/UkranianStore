@@ -1,7 +1,5 @@
-
-
 export function Footer() {
-  document.querySelector('.footer-body').innerHTML = `
+  document.querySelector(".footer-body").innerHTML = `
   <div class="footer">
 						<div class="container">
 							<div class="footer__wrapper">
@@ -35,6 +33,23 @@ export function Footer() {
 								</div>
 							</div>
 						</div>
+						<div class="footer__border">
+							<div class="container">
+								<p class="footer__text">@UkranianStore 2023</p>
+							</div>
+						</div>
 					</div>
-  `
+  `;
+  const witdhWindow = window.innerWidth;
+
+  const footerTitles = document.querySelectorAll(".footer__title");
+
+  if (witdhWindow <= 390) {
+    footerTitles.forEach((footerTitle) => {
+      footerTitle.addEventListener("click", () => {
+        const footerUl = footerTitle.nextElementSibling;
+        footerUl.classList.toggle("footer__ul--open");
+      });
+    });
+  }
 }

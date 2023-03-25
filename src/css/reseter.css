@@ -118,6 +118,7 @@ h6 {
 /* width container */
 .container {
   max-width: 1240px;
+  padding: 0px 10px 0px 10px;
   margin: 0 auto;
   width: 100%;
 }

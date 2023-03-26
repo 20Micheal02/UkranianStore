@@ -1,22 +1,43 @@
-const fnameInput = document.getElementById("fname");
-const lnameInput = document.getElementById("lname");
+const firstNameInput = document.getElementById("fname");
+const lastNameInput = document.getElementById("lname");
 
-fnameInput.addEventListener("input", function () {
-  if (fnameInput.validity.valueMissing) {
-    fnameInput.setCustomValidity("Пожалуйста, введите ваше имя");
-  } else if (/\d|\s|[~`!@#$%\^&*()_+={}\[\]|\\:;\"'<>,.?\/]/g.test(fnameInput.value)) {
-    fnameInput.setCustomValidity("Имя не должно содержать цифры, специальные символы или пробелы");
-  } else {
-    fnameInput.setCustomValidity("");
-  }
-});
+const submitButton = document.querySelector(".button-autorization");
+submitButton.addEventListener("click", validateForm);
 
-lnameInput.addEventListener("input", function () {
-  if (lnameInput.validity.valueMissing) {
-    lnameInput.setCustomValidity("Пожалуйста, введите вашу фамилию");
-  } else if (/\d|\s|[~`!@#$%\^&*()_+={}\[\]|\\:;\"'<>,.?\/]/g.test(lnameInput.value)) {
-    lnameInput.setCustomValidity("Фамилия не должна содержать цифры, специальные символы или пробелы");
+function validateForm(event) {
+  event.preventDefault();
+
+  const firstName = firstNameInput.value.trim();
+  const lastName = lastNameInput.value.trim();
+
+  const nameRegex = /^[a-zA-Zа-яА-ЯіІїЇєЄ']+( [a-zA-Zа-яА-ЯіІїЇєЄ']+)*$/;
+
+  resetErrors();
+
+  if (!nameRegex.test(firstName)) {
+    showError(firstNameInput, "Ім'я повинно містити тільки літери");
+  } else if (!nameRegex.test(lastName)) {
+    showError(lastNameInput, "Прізвище повинно містити тільки літери");
   } else {
-    lnameInput.setCustomValidity("");
+    submitForm();
   }
-});
+}
+
+function showError(input, message) {
+  const errorMessage = input.parentElement.querySelector(".error-message");
+  errorMessage.textContent = message;
+  input.classList.add("invalid");
+}
+
+function resetErrors() {
+  firstNameInput.classList.remove("invalid");
+  lastNameInput.classList.remove("invalid");
+  const errorMessages = document.querySelectorAll(".error-message");
+  errorMessages.forEach((errorMessage) => {
+    errorMessage.textContent = "";
+  });
+}
+
+function submitForm() {
+  document.querySelector("form").submit();
+}

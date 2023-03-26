@@ -126,6 +126,7 @@
 /*-------------------------------error-message----------------------------------------*/
 .error-message {
     color: red;
+    margin-bottom: 10px;
 }
 
 .autorization-box:nth-child(1) > .error-message {
@@ -153,3 +154,4 @@
     line-height: 1.5;
     margin-bottom: 20px;
 }
+

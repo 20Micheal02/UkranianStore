@@ -7,7 +7,7 @@ export function Header() {
     <div class="header__wrapper">
 
       <div class="header__logo">
-        <a href="#" class="logo">Ukranian<span>Store</span> </a>
+        <a href="/" class="logo">Ukranian<span>Store</span> </a>
         <button class="header__btn-categories">
           Каталог
         </button>

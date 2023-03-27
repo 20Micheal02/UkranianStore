@@ -4,7 +4,7 @@ export function Footer() {
 						<div class="container">
 							<div class="footer__wrapper">
 								<div class="footer__logo">
-									<a href="#" class="logo">Ukranian<span>Store</span></a>
+									<a href="/" class="logo">Ukranian<span>Store</span></a>
 								</div>
 								<div class="footer__categories">
 									<p class="footer__title">Категорії</p>

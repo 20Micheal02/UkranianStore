@@ -70,17 +70,20 @@
 }
 .open-menu{
   display: block;
+  z-index: 20;
+  border-radius: 5px;
   width: 80%;
   padding: 30px 20px 30px 20px;
-  background: #33455e;
+  background: #c5c5c5;
   position: absolute;
   top: 75px;
 }
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
 
 .open-menu:active {
   transition: all 0.3s ease;
-=======
+}
+/* ======= */
 /*  */
 @media (max-width: 992.98px) {
   .header__ul {
@@ -100,5 +103,5 @@
     color:#fff;
     padding: 5px 13px 5px 13px;
   }
->>>>>>> ad7f766c05798a579dc3a05b1ccba0d216fa74b6
+/* >>>>>>> ad7f766c05798a579dc3a05b1ccba0d216fa74b6 */
 }
